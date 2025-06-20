@@ -4,6 +4,7 @@ import {connectDB} from './config/connectDB.js';
 
 // Import routes
 import productRoutes from './routes/productRoute.js';
+import categoryRoutes from './routes/categoryRoute.js';
 
 dotenv.config({ path: './config/.env' });
 const app = express();
@@ -15,6 +16,7 @@ const PORT = process.env.PORT || 5001;
 
 // Import routes
 app.use('/api/products', productRoutes);
+app.use('/api/categories', categoryRoutes);
 
 
 

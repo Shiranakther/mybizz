@@ -1,12 +1,16 @@
 import mongoose from 'mongoose';
 
 const categorySchema = new mongoose.Schema({
-  name: {
+  categoryName: {
     type: String,
     unique: true, 
     trim: true
   },
-  description: {
+  categoryImage: {
+    type: String,
+    default: ''
+  },
+  categoryDescription: {
     type: String,
     default: ''
   },
@@ -17,4 +21,4 @@ const categorySchema = new mongoose.Schema({
 });
 
 const categoryModel = mongoose.model('Category', categorySchema);
-export default categorySchema;
+export default categoryModel;
