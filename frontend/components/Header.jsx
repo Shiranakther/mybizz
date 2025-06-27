@@ -5,13 +5,13 @@ import { FaRegUser } from "react-icons/fa6";
 
 export default function Header() {
   return (
-    <header className="flex flex-row justify-between  items-center  bg-white border-t-8 border-b-4 shadow-md pt-4 pb-4 px-8"
+    <header className="flex flex-row justify-between  items-center  bg-white border-t-8 border-b-4 shadow-md pt-4 pb-4 px-8 fixed top-0 z-50 w-full"
         style={{ background:'#FDF2F8' , borderTopColor: '#F578AF',borderBottomColor: '#FCD0E3' }}
     >
-        <div className="text-roce-100 text-4xl font-bold"
+        <div className="text-roce-100 text-4xl font-bold cursor-pointer "
         style={{ color: 'var(--color-roce-100)', }}
         >
-        Eclairette
+        CakeHaven
         </div>
         <div className='flex flex-row items-center gap-10  rounded-full pt-2 pb-2 px-10 py-10 border-1 shadow-md'
         style={{background:'white' ,  borderColor: '#F578AF' }}

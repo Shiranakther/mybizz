@@ -51,7 +51,7 @@
     align-items: center;
     text-align: center;
     font-size: 1rem;
-    color:rgb(94, 94, 94);
+    color:  --color-roce-100;
     justify-content: center;
     border:none;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
@@ -69,6 +69,33 @@
     transition: all 0.3s ease;
 
 }
+
+.button2{
+    display: flex;
+    flex-direction:row ;
+    align-items: center;
+    text-align: center;
+    font-size: 1.1rem;
+    height:40px;
+    width:150px;
+    color:rgb(225 29 72 / 1);
+    justify-content: center;
+    border:none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color:white;
+    
+}
+.button2:hover{
+    background-color: var(--color-roce-100);
+    color: white;
+    transition: all 0.3s ease;
+    border:2px solid white;
+
+}
+
 
 
 
