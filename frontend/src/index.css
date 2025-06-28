@@ -97,6 +97,57 @@
 
 }
 
+.button3{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: medium;
+  background: var(--gradient-roce-1);
+  padding:2px 20px;
+  color: white;
+  font-weight: 400;
+  width: 80%;
+  height: 35px;
+  border-radius:20px;
+ margin-top: 20px;
+
+}
+.button3:hover{
+  background: var(--gradient-roce-2);
+  color: white;
+  transition: all 1s ease;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.button4{
+    display: flex;
+    flex-direction:row ;
+    align-items: center;
+    text-align: center;
+    font-size: 1.1rem;
+    height:40px;
+    width:250px;
+    color:rgb(225 29 72 / 1);
+    justify-content: center;
+    border:1px solid ;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color:white;
+    margin-top: 25px;
+   
+    
+}
+.button4:hover{
+   
+    color: rgb(233, 48, 48);
+    border:2px solid rgb(255, 122, 122);
+     font-weight: bold;
+
+}
 
 
 
