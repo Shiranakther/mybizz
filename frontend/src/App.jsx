@@ -3,7 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from './pages/Home';
-import Category from '../components/Category';
+import AllItems from './pages/AllItems';
 
 function App() {
 
@@ -11,7 +11,8 @@ function App() {
    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/cat" element={<Category />} />
+        <Route path="/all-items" element={<AllItems />} />
+
         
         
       </Routes>

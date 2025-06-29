@@ -17,14 +17,14 @@ export default function Header() {
         style={{background:'white' ,  borderColor: '#F578AF' }}
         >
             <button className='link-underline flex flex-row items-center text-md pb-1 cursor-pointer' style={{ color: 'var(--color-roce-300)' }} >Home</button>
-            <button className='link-underline flex flex-row items-center text-md pb-1 cursor-pointer' style={{ color: 'var(--color-roce-300)' }}>Custom Cakes</button>
-            <button className='link-underline flex flex-row items-center text-md pb-1 cursor-pointer' style={{ color: 'var(--color-roce-300)' }}>Flavors</button>
+            <button className='link-underline flex flex-row items-center text-md pb-1 cursor-pointer' style={{ color: 'var(--color-roce-300)' }}>All Flavors</button>
+            <button className='link-underline flex flex-row items-center text-md pb-1 cursor-pointer' style={{ color: 'var(--color-roce-300)' }}>Customize Cake</button>
             <button className='link-underline flex flex-row items-center text-md pb-1 cursor-pointer' style={{ color: 'var(--color-roce-300)' }}>Gallery</button>
         </div> 
         <div className='flex flex-row items-center gap-6 mr-10'>
-            <button className='button1'><FiHeart /></button >
-            <button className='button1'><MdOutlineShoppingCart /></button>
-            <button className='button1'><FaRegUser /></button>
+            <button className='button1 text-red-400'><FiHeart /></button >
+            <button className='button1 text-red-400'><MdOutlineShoppingCart /></button>
+            <button className='button1 text-red-400'><FaRegUser /></button>
         </div>
     </header>
   )

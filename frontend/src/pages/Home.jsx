@@ -21,7 +21,7 @@ export default function Home() {
 
       
       <div className='flex flex-row justify-center items-center pl-40 pr-40' style={{ background: '#fff7ed' }}>
-    <div className='flex flex-row justify-evenly items-center pt-12 mb-10 flex-wrap pb-12 ' 
+    <div className='flex flex-row justify-evenly items-center pt-12 mb-10 flex-wrap pb-12  flex-start' 
      style={{ background: '#fff7ed' }}
      >
        {Array.from({ length: 8 }).map((_, i) => (
