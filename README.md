@@ -13,7 +13,7 @@ Built with the **MERN stack**, CakeHaven allows users to **order custom cakes**,
 - 🧁 **Custom Cake Ordering** – Users can request personalized designs and flavors
 - 🛍️ **Full Order Management System** – For both customers and store owners
 - 🤖 **AI-Powered Slip Reading** – Detects payment slips automatically for faster confirmation
-- 💳 **Helapay Payment Gateway** – Secure and reliable online payments
+- 💳 **Stripe Payment Gateway** – Secure and reliable online payments
 - 👩‍🍳 **Multi-Seller Friendly** – Built to support small cake businesses
 - 📦 **Dashboard for Order Tracking & Management**
 - 📱 Responsive design, mobile-ready
