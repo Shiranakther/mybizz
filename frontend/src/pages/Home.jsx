@@ -33,7 +33,7 @@ export default function Home() {
       <FeaturedProducts />
       <Newsletter/>
       <Footer />
-     
+  
     </div>
   )
 }

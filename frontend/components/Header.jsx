@@ -2,6 +2,9 @@ import React from 'react'
 import { FiHeart } from "react-icons/fi";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegUser } from "react-icons/fa6";
+import {Link} from 'react-router-dom';
+
+
 
 export default function Header() {
   return (
@@ -16,8 +19,10 @@ export default function Header() {
         <div className='flex flex-row items-center gap-10  rounded-full pt-2 pb-2 px-10 py-10 border-1 shadow-md'
         style={{background:'white' ,  borderColor: '#F578AF' }}
         >
-            <button className='link-underline flex flex-row items-center text-md pb-1 cursor-pointer' style={{ color: 'var(--color-roce-300)' }} >Home</button>
-            <button className='link-underline flex flex-row items-center text-md pb-1 cursor-pointer' style={{ color: 'var(--color-roce-300)' }}>All Flavors</button>
+           <Link to="/"> 
+                <button className='link-underline flex flex-row items-center text-md pb-1 cursor-pointer' style={{ color: 'var(--color-roce-300)' }} >Home</button>
+           </Link>
+           <Link to="/all-items"> <button className='link-underline flex flex-row items-center text-md pb-1 cursor-pointer' style={{ color: 'var(--color-roce-300)' }}>All Flavors</button></Link>
             <button className='link-underline flex flex-row items-center text-md pb-1 cursor-pointer' style={{ color: 'var(--color-roce-300)' }}>Customize Cake</button>
             <button className='link-underline flex flex-row items-center text-md pb-1 cursor-pointer' style={{ color: 'var(--color-roce-300)' }}>Gallery</button>
         </div> 

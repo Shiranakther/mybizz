@@ -2,6 +2,8 @@ import React from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import FeatureBox from '../../components/FeatureBox'
+import { LuSearch } from "react-icons/lu";
+import { RiArrowRightDoubleLine } from "react-icons/ri";
 
 
 export default function AllItems() {
@@ -48,19 +50,24 @@ export default function AllItems() {
             className='w-25 p-2 border border-red-400 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 transition duration-200 bg-white'
           />
         </div>
-        <input 
-        
+        <div className='flex flex-row items-center ml-8  px-4 py-2 border-2 border-red-400 rounded-xl'>
+          <LuSearch className='text-red-400 font-bold text-xl'/>
+
+          <input 
+          className='ml-2 h-full outline-none bg-transparent '
           type='text' 
           placeholder='Chocolate cake' 
-          className='flex-1 p-2 border border-red-400 rounded-md focus:outline-none focus:ring-2 focus:ring-red-400 transition duration-200 bg-white ml-8 '
         />
+
+        </div>
+        
         <button 
           className='bg-red-400 text-white px-12 py-2 rounded-lg font-bold hover:scale-105 transition duration-300 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-red-500 cursor-pointer'
         >
           Search
         </button>
       </div>
-      <div className='flex flex-row flex-wrap gap-5 items-center justify-flex-start px-6 py-10 mb-10'>
+      <div className='flex flex-row flex-wrap gap-5 items-center justify-flex-start px-6 py-10 mb-8'>
           <FeatureBox />
           <FeatureBox />
           <FeatureBox />
@@ -72,6 +79,15 @@ export default function AllItems() {
           <FeatureBox />
           <FeatureBox />
           <FeatureBox />
+      </div>
+      <div className='flex flex-row justify-end gap-2 text-red-400 cursor-pointer pr-15'>
+        <div className='flex flex-row h-5 w-5 border border-red-400 rounded-full px-4 py-4 items-center justify-center text-xl bg-red-400 text-white '>1</div>
+        <div className='flex flex-row h-5 w-5 border border-red-400 rounded-full px-4 py-4 items-center justify-center text-xl hover:bg-red-400 hover:text-white '>2</div>
+        <div className='flex flex-row h-5 w-5 border border-red-400 rounded-full px-4 py-4 items-center justify-center text-xl hover:bg-red-400 hover:text-white '>3</div>
+        <div className='flex flex-row h-5 w-5 border border-red-400 rounded-full px-4 py-4 items-center justify-center text-xl hover:bg-red-400 hover:text-white '>4</div>
+        <div className='flex flex-row h-5 w-5 border border-red-400 rounded-full px-4 py-4 items-center justify-center text-xl hover:bg-red-400 hover:text-white '>5</div>
+        <div className='flex flex-row h-5 w-5 border border-red-400 rounded-full px-4 py-4 items-center justify-center text-xl hover:bg-red-400 hover:text-white '>6</div>
+        <div className='flex flex-row h-5 w-5  rounded-full px-4 py-4 items-center justify-center text-xl  hover:bg-red-400 hover:text-white'> &#62;</div>
       </div>
       <Footer />
     </div>
