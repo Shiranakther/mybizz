@@ -17,7 +17,7 @@ export default function AllItems() {
                 <div className='text-2xl  text-gray-700 mt-4 '>Explore every cake we bake  crafted with love and premium ingredients. </div>
         </div>
 
-      <div className='flex flex-col sm:flex-row w-full items-center gap-4 p-4  rounded-lg  mt-8  '>
+      <div className='flex flex-col sm:flex-row w-full items-center  rounded-lg  mt-8 mx-15 '>
 
        
         
@@ -62,12 +62,13 @@ export default function AllItems() {
         </div>
         
         <button 
-          className='bg-red-400 text-white px-12 py-2 rounded-lg font-bold hover:scale-105 transition duration-300 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-red-500 cursor-pointer'
+          className='bg-red-400 text-white px-8 py-2 rounded-lg font-bold hover:scale-105 transition duration-300 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-red-500 cursor-pointer ml-8'
         >
           Search
         </button>
       </div>
-      <div className='flex flex-row flex-wrap gap-5 items-center justify-flex-start px-6 py-10 mb-8'>
+      <div className='flex flex-row flex-wrap gap-15 items-center justify-between  py-10 my-8 mx-15'>
+          <FeatureBox />
           <FeatureBox />
           <FeatureBox />
           <FeatureBox />
