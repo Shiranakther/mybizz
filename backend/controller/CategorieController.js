@@ -25,7 +25,7 @@ export const getCategoryById = async (req, res) => {
 
 export const createCategory = async (req, res) => {
     try {
-        const { categoryName, categoryImage, categoryDescription } = req.body;
+        const { categoryName, categoryImage,categoryImagePublicId, categoryDescription } = req.body;
 
         // Basic validation
         if (!categoryName || categoryName.length < 3) {
@@ -36,6 +36,7 @@ export const createCategory = async (req, res) => {
         const newCategory = await Category.create({
             categoryName,
             categoryImage,
+            categoryImagePublicId,
             categoryDescription
         });
 
@@ -52,7 +53,7 @@ export const createCategory = async (req, res) => {
 
 export const updateCategory = async (req, res) => {
     try {
-        const { categoryName, categoryImage,categoryDescription } = req.body;
+        const { categoryName, categoryImage,categoryImagePublicId,categoryDescription } = req.body;
 
         // Basic validation
         if (!categoryName || categoryName.length < 3) {
@@ -61,7 +62,7 @@ export const updateCategory = async (req, res) => {
 
         const updatedCategory = await Category.findByIdAndUpdate(
             req.params.id,
-            { categoryName, categoryImage, categoryDescription },
+            { categoryName, categoryImage,categoryImagePublicId, categoryDescription },
             { new: true }
         );
 

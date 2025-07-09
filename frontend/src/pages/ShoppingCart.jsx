@@ -21,9 +21,6 @@ export default function ShoppingCart() {
               <Checkout/>
             </div>
         </div>
-        
-
-      
 
         <Footer/>
     </div>
