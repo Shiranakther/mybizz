@@ -6,6 +6,7 @@ import { FaDropbox } from "react-icons/fa6";
 import { IoDuplicateOutline } from "react-icons/io5";
 import { IoDocumentTextOutline } from "react-icons/io5";
 import { FiLogOut } from "react-icons/fi";
+import { Link } from 'react-router-dom';
 
 export default function Slidebar() {
 
@@ -41,7 +42,7 @@ export default function Slidebar() {
         </div>
         {isOpen && (
         <ul className=" text-left pl-17 text-sm">
-          <li className="hover:font-bold p-2 rounded cursor-pointer">Create Item</li>
+         <Link to='/create-item'><li className="hover:font-bold p-2 rounded cursor-pointer">Create Item</li></Link> 
           <li className="hover:font-bold  p-2 rounded cursor-pointer">Manage Items</li>
         </ul>
       )}

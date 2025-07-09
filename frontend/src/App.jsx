@@ -8,6 +8,8 @@ import AllItems from './pages/AllItems';
 import ItemDetails from './pages/ItemDetails';
 import ShoppingCart from './pages/ShoppingCart';
 import CreateCategory from './pages/CreateCategory';
+
+import CreateItem from './pages/CreateItem';
 import Admin from './pages/Admin'
 
 function App() {
@@ -19,7 +21,8 @@ function App() {
         <Route path="/all-items" element={<AllItems />} />
         <Route path="/item-details/:id" element={<ItemDetails />} />
         <Route path="/cart" element={<ShoppingCart/>}/>
-        <Route path="/cc" element={<CreateCategory/>}/>
+        <Route path="/create-category" element={<CreateCategory/>}/>
+        <Route path="/create-item" element={<CreateItem/>}/>
         <Route path="/admin" element={<Admin/>}/>
       </Routes>
     </BrowserRouter>
