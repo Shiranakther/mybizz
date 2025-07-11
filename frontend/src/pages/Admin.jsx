@@ -7,7 +7,7 @@ export default function Admin() {
         <div className=''>
             <Slidebar/>
         </div>
-        <div className='bg-green-500 w-full h-[1500px] ml-80'>Right</div>
+        <div className='bg-green-500 w-full ml-80'>Right</div>
       
     </div>
   )

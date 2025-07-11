@@ -1,14 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
 
-
-
-
 export default function Items() {
 
-  const [focusedField, setFocusedField] = useState('');
-  const [itemName, setItemName] = useState('');
-  const [secondField, setSecondField] = useState('');
 
   const [tags, setTags] = useState([]);
   const [input, setInput] = useState('');
@@ -59,6 +53,10 @@ export default function Items() {
             <input type='number' min={0} placeholder='Product Price' className='bg-gray-100/20 border-2 border-gray-400 w-[350px] h-[40px] rounded-xl shadow-sm px-2 outline-none text-gray-600 no-spinner'></input>
             <input type='number' min={0} placeholder='Discount Amount' className='bg-gray-100/20 border-2 border-gray-400 w-[350px] h-[40px] rounded-xl shadow-sm px-2 outline-none text-gray-600 no-spinner'></input>
             <input type='number' min={0} placeholder='Discounted Price ' className='bg-gray-100/20 border-2 border-gray-400 w-[350px] h-[40px] rounded-xl shadow-sm px-2 outline-none text-gray-600 no-spinner'></input>
+          </div>
+
+          <div  className='mr-10'>
+            <input type="text" className=' bg-gray-100/20 border-2 border-gray-400 w-full h-[40px] rounded-xl shadow-sm px-2 outline-none ' placeholder='Product Details'/>
           </div>
 
           <textarea name="" id="" className='bg-gray-100/20 border-2 border-gray-400  rounded-xl shadow-sm px-2 outline-none text-gray-600 py-2 mr-10' placeholder='Description'></textarea>
