@@ -9,7 +9,7 @@ export default function CreateItem() {
       <Slidebar/>
       <div className='ml-75 flex flex-col w-full'>
         <AdminHeader/>
-        <div>
+        <div className='h-full'>
             <Items/>
         </div>
       </div>
