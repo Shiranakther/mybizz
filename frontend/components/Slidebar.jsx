@@ -56,7 +56,7 @@ export default function Slidebar() {
         </div>
         {isOpen2 && (
         <ul className=" text-left pl-17 text-sm">
-          <li className="hover:font-bold p-2 rounded cursor-pointer">Create Category</li>
+         <Link to='/create-category'> <li className="hover:font-bold p-2 rounded cursor-pointer">Create Category</li></Link>
           <li className="hover:font-bold  p-2 rounded cursor-pointer">Manage Category</li>
         </ul>
       )}

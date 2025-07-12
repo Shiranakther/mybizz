@@ -4,9 +4,29 @@ import Footer from '../../components/Footer'
 import FeatureBox from '../../components/FeatureBox'
 import { LuSearch } from "react-icons/lu";
 import { RiArrowRightDoubleLine } from "react-icons/ri";
+import { useState,useEffect } from 'react';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+
 
 
 export default function AllItems() {
+
+  const[itemData,setItemData] = useState([]);
+  const navigate = useNavigate();
+
+  
+    const fetchItemData = async()=>{
+      const response = await axios.get('http://localhost:5000/api/products');
+      setItemData(response.data);
+      console.log(response.data);
+    }
+  
+    useEffect(()=>{
+      fetchItemData();
+    },[])
+
+
   return (
     <div className='flex flex-col pt-22'>
       <Header />
@@ -68,18 +88,21 @@ export default function AllItems() {
         </button>
       </div>
       <div className='flex flex-row flex-wrap gap-15 items-center justify-between  py-10 my-8 mx-15'>
-          <FeatureBox />
-          <FeatureBox />
-          <FeatureBox />
-          <FeatureBox />
-          <FeatureBox />
-          <FeatureBox />
-          <FeatureBox />
-          <FeatureBox />
-          <FeatureBox />
-          <FeatureBox />
-          <FeatureBox />
-          <FeatureBox />
+          {itemData.map((item, index) => (
+                          <FeatureBox 
+                            key={index}
+                            onClick={() => navigate(`/item-details/${item._id}`)}
+                            imageUrl={item.productImage}
+                            productName={item.productName}
+                            productCategory='Sub Category'
+                            productRating={item.productRating}
+                            productPrice={item.price}
+                            discountedPrice={item.discountedPrice}
+          
+                            
+                           />
+                        ))}
+
       </div>
       <div className='flex flex-row justify-end gap-2 text-red-400 cursor-pointer pr-15'>
         <div className='flex flex-row h-5 w-5 border border-red-400 rounded-full px-4 py-4 items-center justify-center text-xl bg-red-400 text-white '>1</div>

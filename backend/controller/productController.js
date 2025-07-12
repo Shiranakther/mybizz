@@ -8,7 +8,7 @@ export const getAllProducts = async (req,res)=>{
 }
 
 export const getProductById = async (req, res) => {
-    id = req.params.id;
+    const id = req.params.id;
     const product = await productModel.findById(req.params.id);
     if(!product){
         return res.status(404).json({ message: "Product not found" });

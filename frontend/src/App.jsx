@@ -12,6 +12,8 @@ import CreateCategory from './pages/CreateCategory';
 import CreateItem from './pages/CreateItem';
 import Admin from './pages/Admin'
 
+import FeaturedProducts from '../components/FeaturedProducts';
+
 function App() {
 
   return (
@@ -24,6 +26,7 @@ function App() {
         <Route path="/create-category" element={<CreateCategory/>}/>
         <Route path="/create-item" element={<CreateItem/>}/>
         <Route path="/admin" element={<Admin/>}/>
+        <Route path="/feap" element={<FeaturedProducts/>}/>
       </Routes>
     </BrowserRouter>
   )

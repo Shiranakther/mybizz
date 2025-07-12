@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 import Header from '../../components/Header'
 import Landing from '../../components/Landing'
 import Category from '../../components/Category'
@@ -8,6 +9,21 @@ import Footer from '../../components/Footer'
 import { MdCake } from 'react-icons/md';
 
 export default function Home() {
+  const [categoryData,setCategoryData] = useState([])
+
+
+  const fetchCategoryData = async()=>{
+    
+    const response = await axios.get('http://localhost:5000/api/categories');
+    const data = response.data
+    setCategoryData(data);
+
+  }
+
+  useEffect(()=>{
+    fetchCategoryData();
+  },[])
+
   return (
     <div>
       <Header />
@@ -24,9 +40,16 @@ export default function Home() {
     <div className='flex flex-row justify-evenly items-center pt-12 mb-10 flex-wrap pb-12  flex-start' 
      style={{ background: '#fff7ed' }}
      >
-       {Array.from({ length: 8 }).map((_, i) => (
-          <Category key={i} />
-        ))}
+       {categoryData.map((category, index) => (
+        <Category 
+          key={index}
+          categoryName={category.categoryName}
+          imageUrl={category.categoryImage}
+         />
+      ))}
+
+
+
       
     </div>
       </div>
