@@ -2,7 +2,7 @@
 
 CakeHaven is a **personal e-commerce platform** designed to help small cake business owners grow their online presence, attract customers, and manage their orders seamlessly.
 
-Built with the **MERN stack**, CakeHaven allows users to **order custom cakes**, track their purchases, and pay securely using **Helapay** or **AI-powered slip reading** – a cutting-edge payment verification system.
+Built with the **MERN stack**, CakeHaven allows users to **order custom cakes**, track their purchases, and pay securely using **Stripe** or **AI-powered slip reading** – a cutting-edge payment verification system.
 
 ---
 <img width="1920" height="4211" alt="image" src="https://github.com/user-attachments/assets/126ee827-96d9-4a00-b1f8-c10364b3c0a6" />
